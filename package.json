@@ -1,0 +1,26 @@
+{
+  "name": "meanapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "*",
+    "express": "*",
+    "g": "^2.0.1",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "nodemon": "^1.12.0",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "khaled",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/cli": "^1.4.2"
+  }
+}
