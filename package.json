@@ -16,7 +16,8 @@
     "mongoose": "*",
     "nodemon": "^1.12.0",
     "passport": "*",
-    "passport-jwt": "*"
+    "passport-jwt": "*",
+    "body-parser":"*"
   },
   "author": "khaled",
   "license": "ISC",
