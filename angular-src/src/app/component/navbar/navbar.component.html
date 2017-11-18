@@ -1,27 +1,27 @@
-<nav class="navbar navbar-default ">
-       <div class="container">
-             <div class="navbar-header">
-               <br>
-                <strong calss="navbar-brand" style="color:white" >Recuiter System </strong>
-                <button type="button" class="navbar-toggle" data-toggle="collapse">
-                  
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div id="navbar" class="collapse navbar-collapse">
-                     <ul class="nav navbar-nav navbar-left">
-                       <li><a [routerLink]="['/']"> HOme </a> </li>
-                     </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+          <div class="navbar-header ">
+            <br>
+            <a [routerLink]="['/']"> <strong  style="color:white" > <h3>Recuiter System</h3></strong></a>
+           </div>
+ 
+           <div id="navbar" class="collapse navbar-collapse">
+                  <ul class="nav ml-auto">
 
-                     <ul class="nav navbar-nav navbar-right">
-                        <li *ngIf="authservice.loggedIn()"><a [routerLink]="['/dashbord']"> Dashbord</a> </li>
-                        <li *ngIf="authservice.loggedIn()"><a [routerLink]="['/profile']"> Profile </a> </li>
-                        <li *ngIf="!authservice.loggedIn()"><a [routerLink]="['/login']"> Login </a> </li>
-                        <li *ngIf="!authservice.loggedIn()"><a [routerLink]="['/register']"> Rgister </a> </li>
-                        <li *ngIf="authservice.loggedIn()"><a (click)="onLogoutClick()" href='#'> Logout </a> </li>
-                      </ul>
-              </div> 
-        </div>
- </nav>
+                     <li *ngIf="authservice.loggedIn()"><a style="color: white" [routerLink]="['/dashbord']"> Dashbord &nbsp;</a> </li>
+                
+                     <li *ngIf="authservice.loggedIn()"><a style="color: white" [routerLink]="['/profile']"> Profile &nbsp; </a> </li>
+                    
+                     <li *ngIf="!authservice.loggedIn()"><a style="color: white" [routerLink]="['/login']"> Login &nbsp; </a> </li>
+                     
+                     
+                     <li *ngIf="!authservice.loggedIn()"><a  style="color: white" [routerLink]="['/register']"> Rgister &nbsp; </a> </li>
+  
+                
+                     <li *ngIf="authservice.loggedIn()"><a style="color: white" (click)="onLogoutClick()" href='#'> Logout &nbsp; </a> </li>
+                     </ul>
+                  
+    
+           </div> 
+     </div>
+</nav>
